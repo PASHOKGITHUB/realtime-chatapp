@@ -26,6 +26,7 @@ services:
       - MONGO_URI=mongodb://mongodb:27017/realtime-chatapp
       - JWT_SECRET=supersecretjwtkey12345!
       - NODE_ENV=production
+      - GOOGLE_CLIENT_ID=${VITE_GOOGLE_CLIENT_ID:-448322085675-mn74tf7b227dq6sqrj255cajc0gmiin9.apps.googleusercontent.com}
     depends_on:
       - mongodb
     networks:
